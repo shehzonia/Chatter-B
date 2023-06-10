@@ -1,0 +1,62 @@
+.leftbar{
+    flex:2;
+    hr{
+        height: 0.5px;
+        margin: 15px 0px;
+        border: none;
+        background-color:lightgray;
+    }
+
+    .container{
+        padding: 30px;
+        display: flex;
+        flex-direction:column;
+        text-align: justify;
+        gap:30px;
+       
+        
+
+        .Menu{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            span{
+                font-size:14px;
+            }
+
+            .item{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img{
+                    height: 20px;
+                    width: 20px;
+                    // border-radius: 50%;
+                }
+
+                span{
+                    font-size:17px;
+                }
+            }
+            .item1{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img{
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    object-fit: contain;
+                }
+
+                span{
+                    font-size:17px;
+                }
+            }
+            
+        }
+    }
+}

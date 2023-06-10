@@ -1,0 +1,92 @@
+.Register{
+    height: 100vh;
+    background-color:#ccccff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .card{
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: white;
+        width: 50%;
+        border-radius: 10px;
+        min-height:550px;
+        overflow: hidden;
+
+        .left{
+            flex: 1;
+            background:linear-gradient(rgb(39,11,96,0.5),rgb(39, 11,96,0.5)), url("https://images.pexels.com/photos/3491940/pexels-photo-3491940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center;
+            background-size: cover;
+            padding:50px;
+            display:flex;
+            flex-direction: column;
+            gap:25px;
+            color: white;
+            text-align: justify;
+
+            h1{
+                font-size:55px;
+                line-height:60px;
+            }
+
+            p{
+                margin-top: -15px;
+                text-align: justify;
+            }
+
+            span{
+                margin-top: -10px;
+                font-size: 14px;
+            }
+
+            button{
+                width: 50%;
+                padding: 10px;
+                color: rebeccapurple;
+                 background-color: white;
+                 border: none;
+                 font-weight: bold;
+                 cursor: pointer;
+            }
+
+        }
+        
+        .right{
+            flex: 1;
+            padding:50px;
+            display: flex;
+            flex-direction: column;
+            gap:25px;
+            justify-content:center;
+
+            h2{
+                color:#555;
+
+            }
+            form{
+
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                input{
+                    
+                border: none;
+                border-bottom: 1px solid lightgray;
+                padding: 20px 10px;
+                }
+                button{
+
+                    width: 50%;
+                    padding: 10px;  
+                    background-color:#b19cd9;
+                    color:white;
+                    border: none;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+}
