@@ -1,3 +1,96 @@
 .rightbar{
-    flex: 3;
+    flex:3;
+    position:sticky;
+    top:80px;
+    overflow: scroll;
+    background-color: white;
+    height: calc(100vh - 80px);
+    // &::-webkit-scrollbar{
+        
+    // }
+
+    .container{
+        padding:20px;
+        // text-align: justify;
+
+
+        .item{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding:20px;
+            border-radius:5px;
+            margin-bottom:20px;
+            text-align:start;
+            span{
+                
+                color: gray;
+                text-align: end;
+            }
+
+            .User{
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 20px 0px;
+                // text-align: center;
+
+                .userInfo{
+                    display: flex;
+                    align-items: center;
+                    gap:20px;
+                    position: relative;
+
+                    .online{
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        background-color: limegreen;
+                        position:absolute;
+                        top: 0;
+                        left: 30px;
+                    }
+
+                    p{
+                        color: gray;
+                    }
+
+                    span{
+                        font-weight: 500;
+                        color: black;
+                    }
+                  
+    
+                    img{
+                        width:40px;
+                        height:40px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+    
+                    .buttons{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        button{
+                            border: none;
+                            padding: 5px;
+                            color: white ;
+                            cursor: pointer;
+
+                            &:first-child{
+                                background-color:steelblue;
+                            }
+                            &:last-child{
+                                background-color: rgb(210, 31, 11);
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        
+    }
 }

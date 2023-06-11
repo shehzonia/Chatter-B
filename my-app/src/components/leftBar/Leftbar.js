@@ -80,7 +80,7 @@ const Leftbar = () => {
 
           <div className='item'>
           <img src={Mess} alt='' />
-          <span>Messgaes</span>
+          <span>Messages</span>
           </div>
           </div>
           <hr />
@@ -102,6 +102,7 @@ const Leftbar = () => {
           <span>Tutorials</span>
           </div>
           </div>
+
 
         </div>
 

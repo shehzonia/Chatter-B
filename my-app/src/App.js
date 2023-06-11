@@ -9,12 +9,14 @@ import Leftbar from './components/leftBar/Leftbar';
 import Rightbar from './components/rightBar/Rightbar';
 import Home from './pages/Home/Home';
 import Profile from './pages/Profile/Profile'
+import './style.scss';
 
 function App() {
 
   const Layout = () => {
     return ( 
     <>
+    <div className='theme-dark'>
       <Navbar />
         <div style={{ display:"flex"}}>
         <Leftbar />
@@ -23,7 +25,9 @@ function App() {
         </div>
         <Rightbar/>
       </div>
-      </>)
+      </div>
+      </>
+      )
    
   }
 
@@ -62,10 +66,6 @@ function App() {
     {
       path: "/Login",
       element: <Login />,
-    },
-    {
-      path: "/Register",
-      element: <Register />,
     },
   ];
 
