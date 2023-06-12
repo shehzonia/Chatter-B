@@ -7,10 +7,14 @@ import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import Brightness5OutlinedIcon from '@mui/icons-material/Brightness5Outlined';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { DarkmodeContext } from '../../contextApi/Darkmode';
 
 const Navbar = () => {
-  return (
+  const {Toggle, darkMode} = useContext(DarkmodeContext);
+   return (
     <>
     <div className='navbar'>
     <div className='leftN'>
@@ -18,7 +22,7 @@ const Navbar = () => {
       <span>Chatter</span>
       </Link>
       <HomeOutlinedIcon />
-      <DarkModeOutlinedIcon />
+      {darkMode ? <Brightness5OutlinedIcon  onClick={Toggle} style={{cursor:"pointer"}} /> : <DarkModeOutlinedIcon onClick={Toggle} style={{cursor:"pointer"}} />}    
       <AppsOutlinedIcon />
       <div className='search'>
       <SearchOutlinedIcon />

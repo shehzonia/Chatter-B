@@ -7,6 +7,7 @@ $themes: (
             textSoft:#555,
             border:lightgray,
             hr:lightgray,
+            boxShadow: rgba(0, 0, 0, 0.24) 0px 3px 8px ,
 
         ),
         dark: (
@@ -17,7 +18,7 @@ $themes: (
             textSoft:lightgray,
             border:#444,
             hr:#fff,
-
+            boxShadow: rgba(185, 179, 179, 0.24) 0px 1px 6px,
         ),
 );
 

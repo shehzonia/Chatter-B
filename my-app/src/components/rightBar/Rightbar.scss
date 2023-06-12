@@ -1,13 +1,18 @@
+@import '../../style.scss';
 .rightbar{
+    @include themify($themes){
     flex:3;
     position:sticky;
     top:80px;
-    overflow: scroll;
-    background-color: white;
+    overflow:scroll;
+    background-color:themed("bgSoft") ;
     height: calc(100vh - 80px);
-    // &::-webkit-scrollbar{
-        
-    // }
+    color:themed("textColor");
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
 
     .container{
         padding:20px;
@@ -15,14 +20,15 @@
 
 
         .item{
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            box-shadow:themed("boxShadow");
             padding:20px;
             border-radius:5px;
             margin-bottom:20px;
             text-align:start;
+            background-color:themed("bg") ;
             span{
                 
-                color: gray;
+                color: themed("textColor");
                 text-align: end;
             }
 
@@ -39,6 +45,7 @@
                     align-items: center;
                     gap:20px;
                     position: relative;
+                    color:themed("textColor");
 
                     .online{
                         width: 12px;
@@ -51,12 +58,13 @@
                     }
 
                     p{
-                        color: gray;
-                    }
+                        color: themed("textSoft");
+                        
+                      }
 
                     span{
                         font-weight: 500;
-                        color: black;
+                        color:themed("textColor");
                     }
                   
     
@@ -75,7 +83,7 @@
                         button{
                             border: none;
                             padding: 5px;
-                            color: white ;
+                            color:themed("textColor") ;
                             cursor: pointer;
 
                             &:first-child{
@@ -93,4 +101,5 @@
 
         
     }
+}
 }

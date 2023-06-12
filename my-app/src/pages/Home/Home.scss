@@ -1,49 +1,12 @@
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    height: 50px;
-    border-bottom: 1px solid lightgray;
+@import '../../style.scss';
 
-    .left{
-        display: flex;
-        align-items: center;
-        gap: 25px;
-        span{
-            font-weight: bold;
-            color:rebeccapurple ;
-            font-size: 30px;
-        }
 
-        .search{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            border: 1px solid lightgray;
-            border-radius: 5px;
-            padding: 5px;
+.Home{
+    @include themify($themes){
+    background-color: themed("bgSoft");
+    padding: 20px 70px;
 
-            input{
-                border: none;
-                width: 450px;
-            }
-        }
+
     }
-
-    .right{
-        display: flex;
-        align-items:center;
-        gap: 20px;
-
-        .User{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-
-        }
-    }
-
-
 
 }

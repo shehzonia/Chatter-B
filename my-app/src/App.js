@@ -10,13 +10,18 @@ import Rightbar from './components/rightBar/Rightbar';
 import Home from './pages/Home/Home';
 import Profile from './pages/Profile/Profile'
 import './style.scss';
+import { useContext } from 'react';
+import { DarkmodeContext } from './contextApi/Darkmode';
+import { AuthContext } from './contextApi/AuthContext';
 
 function App() {
-
+const {currentUser} = useContext(AuthContext);
+const {darkMode} = useContext(DarkmodeContext);
+console.log(darkMode);
   const Layout = () => {
     return ( 
     <>
-    <div className='theme-dark'>
+    <div className={`theme-${darkMode ? "dark" : "light"}`}>
       <Navbar />
         <div style={{ display:"flex"}}>
         <Leftbar />
@@ -31,10 +36,8 @@ function App() {
    
   }
 
-  const currentUser = false;
-
   const ProtectedRoute = ({children}) => {
-   if(currentUser){
+   if(!currentUser){
     return <Navigate to="/Login" />;
    }
    return children
