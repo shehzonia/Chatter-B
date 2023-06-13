@@ -1,6 +1,5 @@
 import React from 'react';
 import './Rightbar.scss';
-import img1 from '../../assets/rightbar1.jpeg';
 import img2 from '../../assets/rightbar2.jpeg';
 
 const Rightbar = () => {

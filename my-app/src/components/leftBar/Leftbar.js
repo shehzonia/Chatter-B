@@ -13,9 +13,11 @@ import gall from '../../assets/gall.png';
 import fund from '../../assets/fund.png';
 import games from '../../assets/games.png';
 import Mess from '../../assets/message.png';
-
+import { useContext } from 'react';
+import { AuthContext } from '../../contextApi/AuthContext';
 
 const Leftbar = () => {
+  const {currentUser} = useContext(AuthContext);
   return (
       <>
       <div className="leftbar">
@@ -24,7 +26,11 @@ const Leftbar = () => {
 
           <div className='item1'>
           <img src={Ac} alt='' />
-          <span>John Doe</span>
+          {currentUser && currentUser ? (
+              <span>{currentUser}</span>
+            ) : (
+              <span>Guest</span>
+            )}
           </div>
 
           <div className='item'>

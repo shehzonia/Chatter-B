@@ -15,9 +15,9 @@ import { DarkmodeContext } from './contextApi/Darkmode';
 import { AuthContext } from './contextApi/AuthContext';
 
 function App() {
+  
 const {currentUser} = useContext(AuthContext);
 const {darkMode} = useContext(DarkmodeContext);
-console.log(darkMode);
   const Layout = () => {
     return ( 
     <>
@@ -33,7 +33,6 @@ console.log(darkMode);
       </div>
       </>
       )
-   
   }
 
   const ProtectedRoute = ({children}) => {

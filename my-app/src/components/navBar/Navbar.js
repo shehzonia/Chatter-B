@@ -11,9 +11,11 @@ import Brightness5OutlinedIcon from '@mui/icons-material/Brightness5Outlined';
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { DarkmodeContext } from '../../contextApi/Darkmode';
+import { AuthContext } from '../../contextApi/AuthContext';
 
 const Navbar = () => {
-  const {Toggle, darkMode} = useContext(DarkmodeContext);
+  const { Toggle, darkMode } = useContext(DarkmodeContext);
+  const { currentUser } = useContext(AuthContext);
    return (
     <>
     <div className='navbar'>
@@ -35,7 +37,11 @@ const Navbar = () => {
       <EmailOutlinedIcon />
       <div className='User'>
       <AccountCircleOutlinedIcon />
-      <span>John Doe</span>
+      {currentUser && currentUser ? (
+              <span>{currentUser}</span>
+            ) : (
+              <span>Guest</span>
+            )}
       </div>
     </div>
     

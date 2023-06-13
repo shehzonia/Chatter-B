@@ -5,9 +5,9 @@ import { AuthContext } from '../../contextApi/AuthContext';
 import { useContext } from "react";
 
 const Login = () => {
-  const {Login} = useContext(AuthContext);
+  const {login1} = useContext(AuthContext);
   function handleLogin(){
-    Login();
+    login1();
   }
   return (
     <>

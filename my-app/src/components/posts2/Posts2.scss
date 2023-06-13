@@ -1,0 +1,52 @@
+.post{
+     
+    .container{
+      padding: 10px;
+         
+  
+    .user{
+      display: flez;
+      align-items: center;  
+      justify-content: space-between;
+
+        .userInfo{ 
+            display: flex;
+            gap:20px;
+            align-items: center;
+            // justify-content: space-between;
+  
+            img{       
+                width:30px;
+                height:30px;
+                border-radius: 50%;
+                object-fit: cover;
+                }
+
+                .details{       
+                       display: flex;
+                        flex-direction: column;
+                }
+  
+       
+  
+        }
+        }    
+    }    
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+   
+}
