@@ -1,0 +1,90 @@
+@import "../../style.scss";         
+         
+.comments{  
+    @include themify($themes){         
+        font-size: 15px;           
+        // text-align: justify;          
+             
+          .write{             
+            display: flex;                  
+            align-items: center;           
+            justify-content: space-between;             
+             gap: 20px;             
+            margin: 20px 0px;       
+               
+          }              
+                    
+                    
+       input{             
+           flex: 5;
+           padding: 10px;         
+           border: 1px solid themed("border");             
+           background-color: transparent;
+            color: themed(textColor);     
+           
+    
+    }
+    button{             
+        border:none;             
+        background-color: rgb(43, 162, 209);
+         color: themed(textColor);     
+        padding: 10px;
+        border-radius: 3px;   
+     }
+     
+     img{             
+          height: 30px; 
+          width: 35px;        
+          border-radius: 50%;              
+          object-fit:cover; 
+             
+           
+    
+     }       
+     .comment{             
+        margin: 20px 0px;
+        display: flex;       
+        justify-content: space-between; 
+        text-align: justify;                
+        gap: 10px;             
+           
+       
+    .info{                   
+          
+        flex: 5;        
+        display: flex;      
+        flex-direction: column; 
+        gap: 3px;             
+         align-items: flex-start;            
+           
+                 
+           
+            
+        span{             
+            font-weight: 500;             
+        
+       }                
+              
+              
+        .date{             
+            font-size: 12px;             
+           flex: 1;
+            align-self: center;
+            color: gray;
+            }                
+                 
+             
+           
+       p{             
+        color: themed("textSoft");             
+        margin-top: -5px;   
+    
+   }
+   }       
+   }         
+           
+             
+           
+    }   
+    }        
+    // {}   

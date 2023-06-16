@@ -3,10 +3,11 @@
     gap: 10px;
     height: 200px;
     margin-bottom: 30px;
+    overflow-x:auto;
     
     .story{
         flex: 2;
-        overflow:hidden ;
+        overflow:hidden;
         border-radius: 10px;
         position: relative;
 

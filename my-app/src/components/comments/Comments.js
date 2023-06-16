@@ -1,9 +1,9 @@
-import React from 'react'; 
-import './Post.scss';
-import Posts2 from '../posts2/Posts2.js';
-const Post = () => {
+import React from 'react';
+import './Comments.scss';
+import Spencer from '../../assets/pexels.jpg';
 
-  const TempPosts = [
+const Comments = () => {
+const Comms = [
     {
         id:1,
         name:"Hillary",
@@ -30,34 +30,38 @@ const Post = () => {
         img2:"https://images.pexels.com/photos/920220/pexels-photo-920220.jpeg?auto=compress&cs=tinysrgb&w=600",
         desc:"psum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         
-    },
-    {
-        id:4,
-        userId:5,
-        name:"Sarah Ali",
-        img:"https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=600",
-        img2:"https://images.pexels.com/photos/3599576/pexels-photo-3599576.jpeg?auto=compress&cs=tinysrgb&w=600",
-        desc:"psum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        
-    },
-    {
-        id: 5,
-        userId:6,
-        name:"Antonella ",
-        img: "https://images.pexels.com/photos/789296/pexels-photo-789296.jpeg?auto=compress&cs=tinysrgb&w=600",
-        img2: "https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=600",
-        desc:"psum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        
-    },
+    }
 ]
   return (
     <>
-     <div className='Posts'>
-      {TempPosts.map(post=>{return <Posts2 post={post} key ={post.id} />})}
+     <div className='comments'>
+        <div className='write'>
+         <img src={Spencer} alt='' />
+        <input type='text' placeholder='Write comments ..' />         
+         <button>Send</button>
+        </div>
+        {Comms.map(comment => (<div className='comment'>  
+         
+          <img src={comment.img} alt='' />  
+         <div className='info'>  
+         <span className='name'>{comment.name}</span>
+          <p>{comment.desc}</p> 
+         
+           
+         
+         </div>
+         <span className='date'>1 hour ago</span>
+         
+         
+         
+         
+       
+         
+        </div>) )}
      </div>
     </>
    
   )
 }
-
-export default Post
+// {}
+export default Comments  
