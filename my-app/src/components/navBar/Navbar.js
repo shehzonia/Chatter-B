@@ -24,7 +24,7 @@ const Navbar = () => {
       <span>Chatter</span>
       </Link>
       <div>
-      <Link to="/" className='links'>
+      <Link to="/home" className='links'>
       <HomeOutlinedIcon />
       </Link>
       </div>

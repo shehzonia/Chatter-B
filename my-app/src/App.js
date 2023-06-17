@@ -52,7 +52,7 @@ const {darkMode} = useContext(DarkmodeContext);
       ,
       children: [
         {
-          path: "/",
+          path: "/home",
           element: <Home />,
         },
         {
