@@ -23,7 +23,11 @@ const Navbar = () => {
       <Link to="/" style={{textDecoration:"none"}}>
       <span>Chatter</span>
       </Link>
+      <div>
+      <Link to="/" className='links'>
       <HomeOutlinedIcon />
+      </Link>
+      </div>
       {darkMode ? <Brightness5OutlinedIcon  onClick={Toggle} style={{cursor:"pointer"}} /> : <DarkModeOutlinedIcon onClick={Toggle} style={{cursor:"pointer"}} />}    
       <AppsOutlinedIcon />
       <div className='search'>
@@ -33,7 +37,11 @@ const Navbar = () => {
 
     </div>
     <div className='right'>
+      <div>
+      <Link to= "/Profile/:id" className='links'>
       <Person2OutlinedIcon />
+      </Link>
+      </div>
       <EmailOutlinedIcon />
       <div className='User'>
       <AccountCircleOutlinedIcon />

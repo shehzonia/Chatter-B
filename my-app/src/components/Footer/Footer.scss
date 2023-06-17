@@ -1,0 +1,26 @@
+@import '../../style.scss';
+
+.Footer{
+
+    @include themify($themes){
+        margin-top: 100px;
+        background-color: themed("bg");
+        height: 100px;
+        width: 100%;
+        display: flex;    
+        justify-content: center;             
+         align-items: center;        
+         z-index: 99; 
+       
+                  
+                  
+      
+h4{                  
+   display: flex;    
+   text-align: center;               
+    align-items: center;  
+    font-family: sans-serif;            
+}
+
+    }
+}

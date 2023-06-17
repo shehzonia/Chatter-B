@@ -6,6 +6,10 @@
     background-color: themed("bgSoft");
     padding: 20px 60px;
     color:themed("textColor"); 
+
+    @include mobile{
+        padding:10px;
+    }
    }
 
 }

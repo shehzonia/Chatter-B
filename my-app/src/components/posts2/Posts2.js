@@ -55,7 +55,7 @@ const Posts2 = ( { post } ) => {
 }       
         }>
         {liked ? <FavoriteIcon /> : <FavoriteBorderOutlinedIcon /> }        
-        {likedno}
+        {likedno} likes 
 
         </div>
       <div className='item' onClick={()=> setcommentOpen(!commentOpen)}>
